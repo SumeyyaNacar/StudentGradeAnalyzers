@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class GradeAnalyzer {
     private List<Integer> grades;
 
-    public GradeAnalyzer(List<Integer> grades) {
+    public GradeAnalyzer() {
         this.grades = new ArrayList<>();
     }
 
@@ -46,14 +46,14 @@ public class GradeAnalyzer {
         }
         return min;
     }
-    public void countGradesRange(int min, int max){
+    public int countGradesRange(int min, int max){
         int count=0;
         for (int grade: grades){
             if (grade>=min && grade<=max){
                 count++;
             }
         }
-        System.out.println(count);
+        return count;
 
     }
 
