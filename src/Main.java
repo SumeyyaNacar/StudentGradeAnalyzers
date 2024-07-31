@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Kac ögrenci gireceksiniz?");
         int numOfStudent = scanner.nextInt();
 
-        
+
 
     }
 }
